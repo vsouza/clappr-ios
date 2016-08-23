@@ -1,15 +1,16 @@
 /**
  Clappr is an open source, event based, plugin oriented extensible media player.
 
- Player is the main class and interface to Clappr. Once instantiated it should be [attached to](attachTo:) a UIView before playback can begin. The player will occupy the whole View and resize the video to fit that area. Applications requiring finer control over playback should implement the WebmediaPlayerEventListener protocol and register this listener to the player setting the eventListener property.
+ Player is the main class and interface to Clappr. Once instantiated it should be attached to a UIView (`Player.attachTo(_:controller:)`) before playback can begin. The player will occupy the whole View and resize the video to fit that area. Applications requiring finer control over playback should listen to events following the `EventProtocol` protocol.
 
- By default the player will try to play the video immediately after being attached, using the production environment. The application can override these options using a dictionary passed to either initWithOptions: or initWithVideoId:options:.
+ By default the player will try to play the video immediately after being attached. The application can override these options using a dictionary passed to `Player.init(options:externalPlugins:)`.
 
  **Example usage**
 
      let options = [kSourceUrl : "http://clappr.io/highline.mp4"]
      player = Player(options: options)
-
+ 
+     player.on(PlayerEvent.Play) { _ in print("on Play") }
  */
 public class Player: BaseObject {
     /// Player unique `Core`
@@ -103,7 +104,7 @@ public class Player: BaseObject {
      Attaches the player to a `UIView` under a `UIViewController`.
 
      - parameter view: a visible UIView created by the application using this player.
-     - parameter controller:
+     - parameter controller: a UIViewController for fullscreen support
 
      After the player has been created, it must be included within a UIView using this method. The player will resize itself and fit the video under the containing view without distorting.
      */
@@ -114,31 +115,71 @@ public class Player: BaseObject {
         core.render()
     }
     
+    /**
+     Loads another media on the same player.
+     
+     - parameter source: new media source
+     - parameter mimeType: media MIME type
+     
+     Once a player is created, it can be used to play other videos on the same instance and using the same configuration options by loading another media source. This will reset the player state. Once the media is ready to play the player will try to automatically play it.
+    */
     public func load(source: String, mimeType: String? = nil) {
         core.container.load(source, mimeType: mimeType)
         play()
     }
     
+    /**
+     Plays the media.
+    */
     public func play() {
         core.container.play()
     }
     
+    /**
+     Pauses media playback.
+     */
     public func pause() {
         core.container.pause()
     }
     
+    /**
+     Stops media playback.
+     
+     Stops the media playback and resets its state.
+     */
     public func stop() {
         core.container.stop()
     }
     
+    /**
+     Move current playback position.
+
+     - parameter timeInterval: time position to seek to in seconds.
+     
+     If the media is ready (e.g. playing or paused) it seeks to the closest possible second indicated and resumes the original playback state.
+     */
     public func seek(timeInterval: NSTimeInterval) {
         core.container.seek(timeInterval)
     }
     
+    /**
+     Causes the player to enter or exit fullscreen mode.
+     
+     - parameter fullscreen: whether or not the player should be in fullscreen mode.
+     */
     public func setFullscreen(fullscreen: Bool) {
         core.setFullscreen(fullscreen)
     }
     
+    /**
+     Listen to a Player event.
+     
+     - parameter event: event identifier
+     - parameter callback: closure to be called when event occurs
+     
+     - returns: listen identifier to manage this listening subscription
+     
+     */
     public func on(event: PlayerEvent, callback: EventCallback) -> String {
         return on(event.rawValue, callback: callback)
     }

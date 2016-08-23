@@ -2,6 +2,9 @@ import Foundation
 
 import MediaPlayer
 
+/**
+ Media Control
+ */
 public class MediaControl: UIBaseObject {
     private let animationDuration = 0.3
     

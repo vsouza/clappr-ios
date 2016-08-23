@@ -1,25 +1,69 @@
 /// Player initialization options.
 public typealias Options = [String : AnyObject]
 
-/// Poster URL (`String`).
+/** 
+ Initialization option key.
+ 
+ Value: Media poster URL as a `String`.
+ */
 public let kPosterUrl = "posterUrl"
-/// Source URL (`String`).
+/**
+ Initialization option key.
+ 
+ Value: Media source URL as a `String`.
+ */
 public let kSourceUrl = "sourceUrl"
-/// Custom media control (`MediaControl`).
+/**
+ Initialization option key.
+ 
+ Value: A `MediaControl` to replace the default controls.
+ */
 public let kMediaControl = "mediaControl"
-/// Start in fullscreen mode (`Bool`).
+/**
+ Initialization option key.
+ 
+ Value: `Bool` to indicate if Player should start in fullscreen mode.
+ */
 public let kFullscreen = "fullscreen"
-/// Disable fullscreen button (`Bool`).
+/**
+ Initialization option key.
+ 
+ Value: `Bool` to indicate if the fullscreen button should be disabled.
+ */
 public let kFullscreenDisabled = "fullscreenDisabled"
-/// Start media at this position (`NSTimeInterval`).
+/**
+ Initialization option key.
+ 
+ Value: `NSTimeInterval` to indicate the media start position in seconds.
+ */
 public let kStartAt = "startAt"
-/// Start playing media automatically (`Bool`).
+/**
+ Initialization option key.
+ 
+ Value: `Bool` to indicate if media should start automatically.
+ */
 public let kAutoPlay = "autoplay"
-/// Custom message for Playback not Supported error (`String`).
+/**
+ Initialization option key.
+ 
+ Value: `String` to be used as Playback not Supported error.
+ */
 public let kPlaybackNotSupportedMessage = "playbackNotSupportedMessage"
-/// Media MIME type (`String`).
+/**
+ Initialization option key.
+ 
+ Value: Media MIME type as a `String`.
+ */
 public let kMimeType = "mimeType"
-/// Default subtitle to be displayed (`String`).
+/**
+ Initialization option key.
+ 
+ Value: Default subtitle track name as a `String`.
+ */
 public let kDefaultSubtitle = "defaultSubtitle"
-/// Default audio source for media (`String`).
+/**
+ Initialization option key.
+ 
+ Value: Default audio source track name as a `String`.
+ */
 public let kDefaultAudioSource = "defaultAudioSource"
