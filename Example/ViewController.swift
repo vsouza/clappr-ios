@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         }
         
         player.on(PlayerEvent.error) { userInfo in
-            print("on Error: \(userInfo)")
+            print("on Error: \(String(describing: userInfo))")
         }
 
         player.on(PlayerEvent.enterFullscreen) { _ in

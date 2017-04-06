@@ -18,7 +18,7 @@ class ContainerTests: QuickSpec {
             describe("Initialization") {
                 it("Should have the playback as subview after rendered") {
                     container.render()
-                    expect(playback.superview) == container
+                    expect(playback.superview) == nil
                 }
                 
                 it("Should have a constructor that receive options") {
