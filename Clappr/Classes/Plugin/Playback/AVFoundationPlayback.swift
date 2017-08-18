@@ -281,9 +281,24 @@ open class AVFoundationPlayback: Playback {
             object: player?.currentItem)
     }
 
-    func playbackDidEnd() {
-        trigger(.didComplete)
-        updateState(.idle)
+    func playbackDidEnd(notification: NSNotification) {
+        if let object = notification.object as? AVPlayerItem, let item = self.player?.currentItem {
+            if (object == item) {
+                let duration = item.duration
+                let position = item.currentTime()
+                if (fabs(CMTimeGetSeconds(duration) - CMTimeGetSeconds(position)) <= 2.0) {
+                    print("didComplete: triggered")
+                    trigger(.didComplete)
+                    updateState(.idle)
+                } else {
+                    print("didComplete: Video NOT completed")
+                }
+            } else {
+                print("didComplete: OTHER object")
+            }
+        } else {
+            print("didComplete: INVALID object")
+        }
     }
 
     open override func pause() {
