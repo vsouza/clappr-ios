@@ -1,3 +1,5 @@
+import Foundation
+
 open class DateFormatter {
     fileprivate static let hourInSeconds: Double = 1 * 60 * 60
 

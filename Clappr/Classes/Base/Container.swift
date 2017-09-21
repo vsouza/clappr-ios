@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 open class Container: UIBaseObject {
     internal(set) open var plugins: [UIContainerPlugin] = []

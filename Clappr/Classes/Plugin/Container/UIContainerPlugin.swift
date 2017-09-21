@@ -1,3 +1,5 @@
+import UIKit
+
 open class UIContainerPlugin: UIPlugin, Plugin {
     open weak var container: Container?
 

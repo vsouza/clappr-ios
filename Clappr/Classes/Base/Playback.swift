@@ -1,4 +1,5 @@
 import AVFoundation
+import UIKit
 
 open class Playback: UIBaseObject, Plugin {
     open class var type: PluginType { return .playback }
@@ -70,7 +71,7 @@ open class Playback: UIBaseObject, Plugin {
     }
 
     public required init(options: Options) {
-        Logger.logDebug("loading with \(options)", scope: "\(type(of: self))")
+//        Logger.logDebug("loading with \(options)", scope: "\(type(of: self))")
         self.options = options
         super.init(frame: CGRect.zero)
         isUserInteractionEnabled = false

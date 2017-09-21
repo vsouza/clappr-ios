@@ -1,3 +1,5 @@
+import UIKit
+
 public extension UIView {
     public func addSubviewMatchingConstraints(_ view: UIView) {
         view.translatesAutoresizingMaskIntoConstraints = false

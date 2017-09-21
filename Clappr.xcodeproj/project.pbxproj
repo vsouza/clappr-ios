@@ -7,6 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324545831F71CB7D00B5FC3A /* Clappr.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D362881D41339400CCB866 /* Clappr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		324545841F71CBD700B5FC3A /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F43F81F3102D800417919 /* AppStateManager.swift */; };
+		324545851F71CBDD00B5FC3A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968E5BD81D6CBFA50092F372 /* Logger.swift */; };
+		324545861F71CBDD00B5FC3A /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968E5BDA1D6CC0680092F372 /* LogLevel.swift */; };
+		324545871F71CBE400B5FC3A /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3628C1D41339400CCB866 /* BaseObject.swift */; };
+		324545881F71CBE400B5FC3A /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3628D1D41339400CCB866 /* Container.swift */; };
+		324545891F71CBE400B5FC3A /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3628E1D41339400CCB866 /* Core.swift */; };
+		3245458A1F71CBE400B5FC3A /* EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3628F1D41339400CCB866 /* EventHandler.swift */; };
+		3245458B1F71CBE400B5FC3A /* FullscreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362901D41339400CCB866 /* FullscreenController.swift */; };
+		3245458C1F71CBE400B5FC3A /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362911D41339400CCB866 /* Loader.swift */; };
+		3245458D1F71CBE400B5FC3A /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362941D41339400CCB866 /* Options.swift */; };
+		3245458E1F71CBE400B5FC3A /* MediaControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362921D41339400CCB866 /* MediaControl.swift */; };
+		3245458F1F71CBE400B5FC3A /* MediaOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362931D41339400CCB866 /* MediaOption.swift */; };
+		324545901F71CBE400B5FC3A /* Playback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362951D41339400CCB866 /* Playback.swift */; };
+		324545911F71CBE400B5FC3A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362961D41339400CCB866 /* Player.swift */; };
+		324545921F71CBE400B5FC3A /* UIBaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362971D41339400CCB866 /* UIBaseObject.swift */; };
+		324545931F71CBE800B5FC3A /* MediaControlState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3629C1D41339400CCB866 /* MediaControlState.swift */; };
+		324545941F71CBE800B5FC3A /* MediaOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3629D1D41339400CCB866 /* MediaOptionType.swift */; };
+		324545951F71CBE800B5FC3A /* PlaybackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3629F1D41339400CCB866 /* PlaybackType.swift */; };
+		324545961F71CBE800B5FC3A /* PluginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362A11D41339400CCB866 /* PluginType.swift */; };
+		324545971F71CBE800B5FC3A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B19971E4B827700A0A6BA /* Event.swift */; };
+		324545981F71CBE800B5FC3A /* InternalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E7D2731E786FEE0056F358 /* InternalEvent.swift */; };
+		324545991F71CBEC00B5FC3A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362A31D41339400CCB866 /* UIViewExtension.swift */; };
+		3245459A1F71CBF100B5FC3A /* MediaOptionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362A71D41339400CCB866 /* MediaOptionFactory.swift */; };
+		3245459B1F71CBF100B5FC3A /* PlaybackFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362A81D41339400CCB866 /* PlaybackFactory.swift */; };
+		3245459C1F71CBF400B5FC3A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362AA1D41339400CCB866 /* DateFormatter.swift */; };
+		3245459D1F71CBFB00B5FC3A /* LoadingContainerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362AD1D41339400CCB866 /* LoadingContainerPlugin.swift */; };
+		3245459E1F71CBFB00B5FC3A /* PosterPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362AE1D41339400CCB866 /* PosterPlugin.swift */; };
+		3245459F1F71CBFB00B5FC3A /* UIContainerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362AF1D41339400CCB866 /* UIContainerPlugin.swift */; };
+		324545A01F71CBFE00B5FC3A /* UICorePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362B11D41339400CCB866 /* UICorePlugin.swift */; };
+		324545A11F71CC0200B5FC3A /* AVFoundationPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362B31D41339400CCB866 /* AVFoundationPlayback.swift */; };
+		324545A21F71CC0200B5FC3A /* NoOpPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362B41D41339400CCB866 /* NoOpPlayback.swift */; };
+		324545A31F71CC0400B5FC3A /* UIPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362B51D41339400CCB866 /* UIPlugin.swift */; };
+		324545A41F71CC0900B5FC3A /* EventProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362B71D41339400CCB866 /* EventProtocol.swift */; };
+		324545A51F71CC0900B5FC3A /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362B81D41339400CCB866 /* Plugin.swift */; };
+		324545A61F71CC0E00B5FC3A /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362BA1D41339400CCB866 /* BorderView.swift */; };
+		324545A71F71CC0E00B5FC3A /* DragDetectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362BB1D41339400CCB866 /* DragDetectorView.swift */; };
+		324545A81F71CC0E00B5FC3A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D362BC1D41339400CCB866 /* GradientView.swift */; };
+		324545AC1F71CD3B00B5FC3A /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324545AB1F71CD3B00B5FC3A /* Kingfisher.framework */; };
+		324545B61F71D9D200B5FC3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324545B51F71D9D200B5FC3A /* AppDelegate.swift */; };
+		324545B81F71D9D200B5FC3A /* ViewControllerTVOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324545B71F71D9D200B5FC3A /* ViewControllerTVOS.swift */; };
+		324545BB1F71D9D200B5FC3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324545B91F71D9D200B5FC3A /* Main.storyboard */; };
+		324545BD1F71D9D200B5FC3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324545BC1F71D9D200B5FC3A /* Assets.xcassets */; };
+		324545D41F71DAA900B5FC3A /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324545AB1F71CD3B00B5FC3A /* Kingfisher.framework */; };
+		324545D51F71DAA900B5FC3A /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 324545AB1F71CD3B00B5FC3A /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		324545D71F71DAAD00B5FC3A /* Clappr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3245457B1F71C01700B5FC3A /* Clappr.framework */; };
+		324545D81F71DAAD00B5FC3A /* Clappr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3245457B1F71C01700B5FC3A /* Clappr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		324545DC1F71DEA000B5FC3A /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324545DB1F71DEA000B5FC3A /* PlayerViewController.swift */; };
 		96036D671CBD89500022CCCA /* PlaybackFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96036D651CBD88B60022CCCA /* PlaybackFactoryTests.swift */; };
 		9603A06C1C05E6D100B55D8F /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9603A06B1C05E6D100B55D8F /* PlayerTests.swift */; };
 		963B19981E4B827700A0A6BA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B19971E4B827700A0A6BA /* Event.swift */; };
@@ -79,6 +127,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		324545D91F71DAAD00B5FC3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3245457A1F71C01700B5FC3A;
+			remoteInfo = Clappr_tvOS;
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -96,6 +151,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		324545D61F71DAA900B5FC3A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				324545D81F71DAAD00B5FC3A /* Clappr.framework in Embed Frameworks */,
+				324545D51F71DAA900B5FC3A /* Kingfisher.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96D362731D41330E00CCB866 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,6 +178,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3245457B1F71C01700B5FC3A /* Clappr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Clappr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3245457E1F71C01700B5FC3A /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		324545AB1F71CD3B00B5FC3A /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/tvOS/Kingfisher.framework; sourceTree = "<group>"; };
+		324545B31F71D9D200B5FC3A /* Clappr_Example_tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clappr_Example_tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		324545B51F71D9D200B5FC3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		324545B71F71D9D200B5FC3A /* ViewControllerTVOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTVOS.swift; sourceTree = "<group>"; };
+		324545BA1F71D9D200B5FC3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		324545BC1F71D9D200B5FC3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		324545BE1F71D9D200B5FC3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324545DB1F71DEA000B5FC3A /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Clappr_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clappr_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* Clappr_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Clappr_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,7 +249,7 @@
 		96D362BA1D41339400CCB866 /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
 		96D362BB1D41339400CCB866 /* DragDetectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragDetectorView.swift; sourceTree = "<group>"; };
 		96D362BC1D41339400CCB866 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		96D362BD1D41339400CCB866 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96D362BD1D41339400CCB866 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		96D362C01D41339400CCB866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96D362C11D41339400CCB866 /* MediaControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaControlView.xib; sourceTree = "<group>"; };
 		96D362F01D41345E00CCB866 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
@@ -188,6 +265,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		324545771F71C01700B5FC3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324545AC1F71CD3B00B5FC3A /* Kingfisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324545B01F71D9D200B5FC3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324545D71F71DAAD00B5FC3A /* Clappr.framework in Frameworks */,
+				324545D41F71DAA900B5FC3A /* Kingfisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +311,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		324545B41F71D9D200B5FC3A /* Clappr_Example_tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				324545B51F71D9D200B5FC3A /* AppDelegate.swift */,
+				324545B71F71D9D200B5FC3A /* ViewControllerTVOS.swift */,
+				324545DB1F71DEA000B5FC3A /* PlayerViewController.swift */,
+				324545B91F71D9D200B5FC3A /* Main.storyboard */,
+				324545BC1F71D9D200B5FC3A /* Assets.xcassets */,
+				324545BE1F71D9D200B5FC3A /* Info.plist */,
+			);
+			path = Clappr_Example_tvOS;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +331,7 @@
 				96D362041D41156A00CCB866 /* Example */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				96D3627D1D41337600CCB866 /* Clappr */,
+				324545B41F71D9D200B5FC3A /* Clappr_Example_tvOS */,
 				607FACD11AFB9204008FA782 /* Products */,
 				D9A0DBC9D3DEA84C86432E68 /* Frameworks */,
 			);
@@ -237,6 +345,8 @@
 				607FACD01AFB9204008FA782 /* Clappr_Example.app */,
 				607FACE51AFB9204008FA782 /* Clappr_Tests.xctest */,
 				96D3627C1D41337600CCB866 /* Clappr.framework */,
+				3245457B1F71C01700B5FC3A /* Clappr.framework */,
+				324545B31F71D9D200B5FC3A /* Clappr_Example_tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -460,7 +570,8 @@
 			isa = PBXGroup;
 			children = (
 				96D362881D41339400CCB866 /* Clappr.h */,
-				96D362BD1D41339400CCB866 /* Info.plist */,
+				96D362BD1D41339400CCB866 /* Info-iOS.plist */,
+				3245457E1F71C01700B5FC3A /* Info-tvOS.plist */,
 			);
 			name = Header;
 			sourceTree = "<group>";
@@ -476,6 +587,7 @@
 		D9A0DBC9D3DEA84C86432E68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				324545AB1F71CD3B00B5FC3A /* Kingfisher.framework */,
 				B46D05A71DB7DBD60004B23F /* Quick.framework */,
 				B46D05A51DB7DBC50004B23F /* Nimble.framework */,
 				96D362F01D41345E00CCB866 /* Kingfisher.framework */,
@@ -486,6 +598,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		324545781F71C01700B5FC3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324545831F71CB7D00B5FC3A /* Clappr.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96D362791D41337600CCB866 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -497,6 +617,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3245457A1F71C01700B5FC3A /* Clappr_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324545821F71C01700B5FC3A /* Build configuration list for PBXNativeTarget "Clappr_tvOS" */;
+			buildPhases = (
+				324545761F71C01700B5FC3A /* Sources */,
+				324545771F71C01700B5FC3A /* Frameworks */,
+				324545781F71C01700B5FC3A /* Headers */,
+				324545791F71C01700B5FC3A /* Resources */,
+				324545AE1F71D03900B5FC3A /* Carthage Copy Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clappr_tvOS;
+			productName = Clappr_tvOS;
+			productReference = 3245457B1F71C01700B5FC3A /* Clappr.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		324545B21F71D9D200B5FC3A /* Clappr_Example_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324545BF1F71D9D200B5FC3A /* Build configuration list for PBXNativeTarget "Clappr_Example_tvOS" */;
+			buildPhases = (
+				324545AF1F71D9D200B5FC3A /* Sources */,
+				324545B01F71D9D200B5FC3A /* Frameworks */,
+				324545B11F71D9D200B5FC3A /* Resources */,
+				324545D61F71DAA900B5FC3A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				324545DA1F71DAAD00B5FC3A /* PBXTargetDependency */,
+			);
+			name = Clappr_Example_tvOS;
+			productName = Clappr_Example_tvOS;
+			productReference = 324545B31F71D9D200B5FC3A /* Clappr_Example_tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		607FACCF1AFB9204008FA782 /* Clappr_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Clappr_Example" */;
@@ -561,10 +719,20 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					3245457A1F71C01700B5FC3A = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 6L28B3SPDX;
+						ProvisioningStyle = Automatic;
+					};
+					324545B21F71D9D200B5FC3A = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 6L28B3SPDX;
+						ProvisioningStyle = Automatic;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0820;
@@ -601,11 +769,29 @@
 				607FACCF1AFB9204008FA782 /* Clappr_Example */,
 				607FACE41AFB9204008FA782 /* Clappr_Tests */,
 				96D3627B1D41337600CCB866 /* Clappr */,
+				3245457A1F71C01700B5FC3A /* Clappr_tvOS */,
+				324545B21F71D9D200B5FC3A /* Clappr_Example_tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		324545791F71C01700B5FC3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324545B11F71D9D200B5FC3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324545BD1F71D9D200B5FC3A /* Assets.xcassets in Resources */,
+				324545BB1F71D9D200B5FC3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -649,6 +835,21 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		324545AE1F71D03900B5FC3A /* Carthage Copy Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/Kingfisher.framework",
+			);
+			name = "Carthage Copy Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		96D362F21D41346300CCB866 /* Carthage Copy Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -682,6 +883,60 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		324545761F71C01700B5FC3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324545891F71CBE400B5FC3A /* Core.swift in Sources */,
+				3245458F1F71CBE400B5FC3A /* MediaOption.swift in Sources */,
+				324545991F71CBEC00B5FC3A /* UIViewExtension.swift in Sources */,
+				3245458A1F71CBE400B5FC3A /* EventHandler.swift in Sources */,
+				324545A41F71CC0900B5FC3A /* EventProtocol.swift in Sources */,
+				324545841F71CBD700B5FC3A /* AppStateManager.swift in Sources */,
+				324545A21F71CC0200B5FC3A /* NoOpPlayback.swift in Sources */,
+				324545971F71CBE800B5FC3A /* Event.swift in Sources */,
+				324545A71F71CC0E00B5FC3A /* DragDetectorView.swift in Sources */,
+				3245459F1F71CBFB00B5FC3A /* UIContainerPlugin.swift in Sources */,
+				324545961F71CBE800B5FC3A /* PluginType.swift in Sources */,
+				324545A11F71CC0200B5FC3A /* AVFoundationPlayback.swift in Sources */,
+				3245459A1F71CBF100B5FC3A /* MediaOptionFactory.swift in Sources */,
+				324545931F71CBE800B5FC3A /* MediaControlState.swift in Sources */,
+				324545A61F71CC0E00B5FC3A /* BorderView.swift in Sources */,
+				324545A81F71CC0E00B5FC3A /* GradientView.swift in Sources */,
+				324545911F71CBE400B5FC3A /* Player.swift in Sources */,
+				324545871F71CBE400B5FC3A /* BaseObject.swift in Sources */,
+				3245458B1F71CBE400B5FC3A /* FullscreenController.swift in Sources */,
+				324545881F71CBE400B5FC3A /* Container.swift in Sources */,
+				324545861F71CBDD00B5FC3A /* LogLevel.swift in Sources */,
+				3245459C1F71CBF400B5FC3A /* DateFormatter.swift in Sources */,
+				3245459D1F71CBFB00B5FC3A /* LoadingContainerPlugin.swift in Sources */,
+				324545941F71CBE800B5FC3A /* MediaOptionType.swift in Sources */,
+				3245459B1F71CBF100B5FC3A /* PlaybackFactory.swift in Sources */,
+				324545851F71CBDD00B5FC3A /* Logger.swift in Sources */,
+				324545A31F71CC0400B5FC3A /* UIPlugin.swift in Sources */,
+				324545A01F71CBFE00B5FC3A /* UICorePlugin.swift in Sources */,
+				324545981F71CBE800B5FC3A /* InternalEvent.swift in Sources */,
+				3245459E1F71CBFB00B5FC3A /* PosterPlugin.swift in Sources */,
+				3245458E1F71CBE400B5FC3A /* MediaControl.swift in Sources */,
+				324545901F71CBE400B5FC3A /* Playback.swift in Sources */,
+				324545921F71CBE400B5FC3A /* UIBaseObject.swift in Sources */,
+				3245458D1F71CBE400B5FC3A /* Options.swift in Sources */,
+				324545951F71CBE800B5FC3A /* PlaybackType.swift in Sources */,
+				324545A51F71CC0900B5FC3A /* Plugin.swift in Sources */,
+				3245458C1F71CBE400B5FC3A /* Loader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324545AF1F71D9D200B5FC3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324545B81F71D9D200B5FC3A /* ViewControllerTVOS.swift in Sources */,
+				324545B61F71D9D200B5FC3A /* AppDelegate.swift in Sources */,
+				324545DC1F71DEA000B5FC3A /* PlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -762,6 +1017,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		324545DA1F71DAAD00B5FC3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3245457A1F71C01700B5FC3A /* Clappr_tvOS */;
+			targetProxy = 324545D91F71DAAD00B5FC3A /* PBXContainerItemProxy */;
+		};
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* Clappr_Example */;
@@ -775,6 +1035,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		324545B91F71D9D200B5FC3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				324545BA1F71D9D200B5FC3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		96D362061D41156A00CCB866 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -794,6 +1062,166 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		324545801F71C01700B5FC3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6L28B3SPDX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Clappr/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clappr.Clappr-tvOS";
+				PRODUCT_NAME = Clappr;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		324545811F71C01700B5FC3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6L28B3SPDX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Clappr/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clappr.Clappr-tvOS";
+				PRODUCT_NAME = Clappr;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		324545C01F71D9D200B5FC3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6L28B3SPDX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Clappr_Example_tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clappr.Clappr-Example-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		324545C11F71D9D200B5FC3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L28B3SPDX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Clappr_Example_tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clappr.Clappr-Example-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -974,7 +1402,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Clappr/Info.plist;
+				INFOPLIST_FILE = "Clappr/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1002,7 +1430,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Clappr/Info.plist;
+				INFOPLIST_FILE = "Clappr/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1019,6 +1447,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		324545821F71C01700B5FC3A /* Build configuration list for PBXNativeTarget "Clappr_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324545801F71C01700B5FC3A /* Debug */,
+				324545811F71C01700B5FC3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324545BF1F71D9D200B5FC3A /* Build configuration list for PBXNativeTarget "Clappr_Example_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324545C01F71D9D200B5FC3A /* Debug */,
+				324545C11F71D9D200B5FC3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Clappr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

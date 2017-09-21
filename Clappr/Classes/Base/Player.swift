@@ -1,8 +1,12 @@
+import UIKit
+import AVKit
+
 open class Player: BaseObject {
 
     open var playbackEventsToListen: [String] = []
     fileprivate var playbackEventsListenIds: [String] = []
     fileprivate(set) open var core: Core?
+    fileprivate var playerViewController: AVPlayerViewController?
 
     open var activeContainer: Container? {
         return core?.activeContainer
@@ -106,6 +110,22 @@ open class Player: BaseObject {
         core?.render()
     }
 
+    open func attachTo(controller: UIViewController) {
+        playerViewController = AVPlayerViewController()
+        core?.parentView = playerViewController?.contentOverlayView
+        core?.parentController = controller
+
+        if let vc = playerViewController {
+            controller.addChildViewController(vc)
+            vc.view.frame = controller.view.frame
+            vc.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            controller.view.addSubview(vc.view)
+            vc.didMove(toParentViewController: controller)
+        }
+
+        core?.render()
+    }
+
     open func load(_ source: String, mimeType: String? = nil) {
         core?.activeContainer?.load(source, mimeType: mimeType)
         play()
@@ -147,6 +167,15 @@ open class Player: BaseObject {
 
                 playbackEventsListenIds.append(listenId)
             }
+
+            let listenId = listenToOnce(playback, eventName: Event.ready.rawValue, callback: { [weak self] _ in self?.bindPlayer(playback: playback) })
+            playbackEventsListenIds.append(listenId)
+        }
+    }
+
+    fileprivate func bindPlayer(playback: Playback?) {
+        if let player = (playback as? AVFoundationPlayback)?.player {
+            playerViewController?.player = player
         }
     }
 

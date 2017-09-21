@@ -1,7 +1,9 @@
 import Foundation
 
 protocol AppStateManagerDelegate: class {
+    #if os(iOS)
     func didChange(state: UIApplicationState)
+    #endif
 }
 
 class AppStateManager: NSObject {
@@ -29,6 +31,8 @@ class AppStateManager: NSObject {
     }
 
     @objc private func didChangeState() {
-        delegate?.didChange(state: UIApplication.shared.applicationState)
+        #if os(iOS)
+            delegate?.didChange(state: UIApplication.shared.applicationState)
+        #endif
     }
 }

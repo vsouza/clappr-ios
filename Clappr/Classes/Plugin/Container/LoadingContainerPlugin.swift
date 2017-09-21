@@ -1,3 +1,5 @@
+import UIKit
+
 open class LoadingContainerPlugin: UIContainerPlugin {
 
     fileprivate var spinningWheel: UIActivityIndicatorView!

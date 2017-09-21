@@ -1,3 +1,5 @@
+import UIKit
+
 open class Core: UIBaseObject, UIGestureRecognizerDelegate {
     fileprivate(set) open var options: Options
     fileprivate(set) open var containers: [Container] = []

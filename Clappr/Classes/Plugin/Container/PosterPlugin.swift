@@ -1,4 +1,5 @@
 import Kingfisher
+import UIKit
 
 open class PosterPlugin: UIContainerPlugin {
     fileprivate var poster = UIImageView(frame: CGRect.zero)
@@ -53,7 +54,7 @@ open class PosterPlugin: UIContainerPlugin {
         playButton.addTarget(self, action: #selector(PosterPlugin.playTouched), for: .touchUpInside)
     }
 
-    func playTouched() {
+    @objc func playTouched() {
         container?.playback?.seek(0)
         container?.playback?.play()
     }

@@ -28,7 +28,9 @@ open class MediaControl: UIBaseObject {
     @IBOutlet open var playbackControlButton: UIButton?
     @IBOutlet open var fullscreenButton: UIButton?
 
+    #if os(iOS)
     @IBOutlet open weak var airPlayVolumeView: MPVolumeView?
+    #endif
 
     internal(set) open weak var container: Container?
     internal(set) open var controlsHidden = false
@@ -89,7 +91,11 @@ open class MediaControl: UIBaseObject {
     }
 
     open class func loadNib() -> UINib? {
-        return UINib(nibName: "MediaControlView", bundle: Bundle(for: MediaControl.self))
+        #if os(iOS)
+            return UINib(nibName: "MediaControlView", bundle: Bundle(for: MediaControl.self))
+        #else
+            return nil
+        #endif
     }
 
     open class func initCustom() -> MediaControl {
@@ -108,9 +114,11 @@ open class MediaControl: UIBaseObject {
         mediaControl.scrubberInitialPosition = mediaControl.progressBarWidthConstraint?.constant ?? 0
         mediaControl.scrubberInitialHeight = mediaControl.scrubberOuterCircleHeightConstraint?.constant ?? 0
         mediaControl.scrubberInitialWidth = mediaControl.scrubberOuterCircleWidthConstraint?.constant ?? 0
-        mediaControl.airPlayVolumeView?.showsVolumeSlider = false
-        mediaControl.airPlayVolumeView?.showsRouteButton = true
-        mediaControl.airPlayVolumeView?.backgroundColor = UIColor.clear
+        #if os(iOS)
+            mediaControl.airPlayVolumeView?.showsVolumeSlider = false
+            mediaControl.airPlayVolumeView?.showsRouteButton = true
+            mediaControl.airPlayVolumeView?.backgroundColor = UIColor.clear
+        #endif
         mediaControl.hide()
         mediaControl.bindOrientationChangedListener()
         if let seekBarView = mediaControl.seekBarView as? DragDetectorView {
@@ -143,11 +151,13 @@ open class MediaControl: UIBaseObject {
     }
 
     open func bindOrientationChangedListener() {
-        NotificationCenter.default.addObserver(self, selector: #selector(MediaControl.didRotate),
-                                               name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        #if os(iOS)
+            NotificationCenter.default.addObserver(self, selector: #selector(MediaControl.didRotate),
+                                                   name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        #endif
     }
 
-    open func didRotate() {
+    @objc open func didRotate() {
         updateBars()
         updateScrubberPosition()
     }
@@ -313,7 +323,7 @@ open class MediaControl: UIBaseObject {
         controlsHidden = hidden
     }
 
-    open func toggleVisibility() {
+    @objc open func toggleVisibility() {
         controlsHidden ? showAnimated() : hideAnimated()
     }
 
@@ -358,7 +368,7 @@ open class MediaControl: UIBaseObject {
                                                  target: self, selector: #selector(MediaControl.hideAfterPlay), userInfo: nil, repeats: false)
     }
 
-    func hideAfterPlay() {
+    @objc func hideAfterPlay() {
         hideControlsTimer?.invalidate()
         if isPlaybackPlaying() {
             hideAnimated()
@@ -367,7 +377,7 @@ open class MediaControl: UIBaseObject {
         }
     }
 
-    open func handleSeekbarViewTouch(_ view: DragDetectorView) {
+    @objc open func handleSeekbarViewTouch(_ view: DragDetectorView) {
         if let touch = view.currentTouch, !livePlayback {
             let touchPoint = touch.location(in: seekBarView)
             progressBarWidthConstraint?.constant = touchPoint.x + scrubberInitialPosition
