@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View ControllerTVOS-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewControllerTVOS" customModule="Clappr_Example_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,36 +21,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1P-4o-qJs">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yk-Jj-6ub">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yk-Jj-6ub">
                                 <rect key="frame" x="830" y="497" width="260" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Play Video"/>
                                 <connections>
-                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="iRs-Ux-wEi"/>
+                                    <segue destination="31X-BR-96A" kind="show" id="vqv-lf-Vbn"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="S1P-4o-qJs" firstAttribute="centerX" secondItem="0Yk-Jj-6ub" secondAttribute="centerX" id="Fzn-WG-bxV"/>
-                            <constraint firstItem="S1P-4o-qJs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Y8k-kO-AfU"/>
-                            <constraint firstItem="S1P-4o-qJs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hwL-SL-rlS"/>
-                            <constraint firstAttribute="bottom" secondItem="S1P-4o-qJs" secondAttribute="bottom" id="iAr-aL-4eT"/>
-                            <constraint firstItem="S1P-4o-qJs" firstAttribute="centerY" secondItem="0Yk-Jj-6ub" secondAttribute="centerY" id="mHG-Lh-fZJ"/>
-                            <constraint firstAttribute="trailing" secondItem="S1P-4o-qJs" secondAttribute="trailing" id="uhk-ye-mir"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
-                    <connections>
-                        <outlet property="playerContainer" destination="S1P-4o-qJs" id="Qe3-eb-9Xl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="o0X-bJ-45H">
+            <objects>
+                <viewController id="31X-BR-96A" customClass="PlayerViewController" customModule="Clappr_Example_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YFh-Ft-jUH"/>
+                        <viewControllerLayoutGuide type="bottom" id="ysO-be-MBd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K2P-f8-Rc1">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2Uw-03-TUe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPS-gH-TJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="65"/>
         </scene>
     </scenes>
 </document>
