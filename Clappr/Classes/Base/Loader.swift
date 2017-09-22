@@ -4,7 +4,7 @@ open class Loader {
     #if os(iOS)
     internal(set) open var containerPlugins: [Plugin.Type] = [PosterPlugin.self, LoadingContainerPlugin.self]
     #else
-    internal(set) open var containerPlugins: [Plugin.Type] = [PosterPlugin.self]
+    internal(set) open var containerPlugins: [Plugin.Type] = []
     #endif
 
     internal(set) open var corePlugins = [Plugin.Type]()
